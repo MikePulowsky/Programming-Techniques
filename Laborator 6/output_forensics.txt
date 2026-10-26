@@ -1,0 +1,25 @@
+[B1] tipul real
+  probe/foto.jpg -> jpeg
+  probe/ascuns.png -> png
+
+[B2] strings din ascuns.png (ultimele 8)
+  IHDR
+  IDATx
+  15hB
+  IEND
+  secret.txtFLAG{ascuns_prin_carving}
+  secret.txtPK
+
+[B3] EXIF si GPS din foto.jpg
+  Model = iPhone 13
+  DateTime = 2026:09:14 10:30:00
+  GPSInfo = 98
+  Make = Apple
+  GPS brut: {'GPSLatitudeRef': 'N', 'GPSLatitude': (47.0, 1.0, 0.0), 'GPSLongitudeRef': 'E', 'GPSLongitude': (28.0, 51.0, 27.0)}
+  Lat/Lon: 47.016667, 28.857500
+
+[B4] carving din ascuns.png
+arhiva extrasa de la octetul 781
+-- secret.txt
+FLAG{ascuns_prin_carving}
+
